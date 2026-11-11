@@ -1,0 +1,40 @@
+[
+  {
+    "dtype": "float32",
+    "manual_attention": true,
+    "rows": [
+      48,
+      1
+    ],
+    "widths": [
+      768,
+      408
+    ],
+    "losses": [
+      1.7512574195861816,
+      1.7512578964233398
+    ],
+    "loss_abs": 4.76837158203125e-07,
+    "valid_logits_mean_abs": 2.1681787529814756e-06,
+    "gradient_relative_l2": 2.534092723574242e-06
+  },
+  {
+    "dtype": "bfloat16",
+    "manual_attention": false,
+    "rows": [
+      48,
+      1
+    ],
+    "widths": [
+      768,
+      408
+    ],
+    "losses": [
+      1.750658392906189,
+      1.7504726648330688
+    ],
+    "loss_abs": 0.0001857280731201172,
+    "valid_logits_mean_abs": 0.014997252263128757,
+    "gradient_relative_l2": 0.01835696429130304
+  }
+]

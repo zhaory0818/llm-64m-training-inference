@@ -1,0 +1,59 @@
+[
+  {
+    "kind": "projection",
+    "length": 32,
+    "max_abs": 0.0078125,
+    "mean_abs": 5.130171757627977e-06,
+    "relative_l2": 3.643301533884369e-05,
+    "last_argmax_equal": true,
+    "greedy_16_equal": true,
+    "driver_matches_original_generate": true
+  },
+  {
+    "kind": "projection",
+    "length": 128,
+    "max_abs": 0.0078125,
+    "mean_abs": 6.621330612688325e-06,
+    "relative_l2": 4.377531513455324e-05,
+    "last_argmax_equal": true,
+    "greedy_16_equal": true,
+    "driver_matches_original_generate": true
+  },
+  {
+    "kind": "projection",
+    "length": 512,
+    "max_abs": 0.00390625,
+    "mean_abs": 3.246292408221052e-06,
+    "relative_l2": 2.81517695839284e-05,
+    "last_argmax_equal": true,
+    "greedy_16_equal": true,
+    "driver_matches_original_generate": true
+  },
+  {
+    "kind": "merge",
+    "length": 32,
+    "max_abs": 0.009765625,
+    "mean_abs": 0.0020310140680521727,
+    "relative_l2": 0.0007000871119089425,
+    "last_argmax_equal": true,
+    "greedy_32_equal": true
+  },
+  {
+    "kind": "merge",
+    "length": 128,
+    "max_abs": 0.00830078125,
+    "mean_abs": 0.001759792910888791,
+    "relative_l2": 0.0006351378397084773,
+    "last_argmax_equal": true,
+    "greedy_32_equal": true
+  },
+  {
+    "kind": "merge",
+    "length": 512,
+    "max_abs": 0.015625,
+    "mean_abs": 0.0017397180199623108,
+    "relative_l2": 0.0007217735983431339,
+    "last_argmax_equal": true,
+    "greedy_32_equal": true
+  }
+]

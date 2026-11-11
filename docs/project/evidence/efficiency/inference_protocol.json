@@ -1,0 +1,36 @@
+{
+  "prompt_tokens": [
+    32,
+    128,
+    512
+  ],
+  "new_tokens": [
+    32,
+    128
+  ],
+  "repeats": 5,
+  "warmup_per_condition": 1,
+  "dtype": "float16",
+  "batch": 1,
+  "EOS_disabled_for_equal_work": true,
+  "primary_baseline": "cache=True, logits_to_keep=0",
+  "projection_candidate": "cache=True, logits_to_keep=1",
+  "mechanism_only": "cache=False, logits_to_keep=0",
+  "confirmation": {
+    "prompt_tokens": 256,
+    "new_tokens": 64,
+    "repeats": 5,
+    "different_text": true
+  },
+  "measurement": "Independent greedy driver calls original forward; GPU-event prefill/decode and synchronized wall time; not HTTP TTFT.",
+  "numerical_tolerance": {
+    "projection_fp16_max_abs": 0.0625,
+    "projection_fp16_rel_l2": 0.003,
+    "merge_fp16_mean_abs": 0.01,
+    "merge_fp16_rel_l2": 0.005
+  },
+  "greedy_equality": "Report separately; approximate FP16 logit agreement is not universal exact text equivalence.",
+  "script_sha256": "f2a04340515fd52826724a155a3aa9b228e44030b2fcd4512f5f887efbba12c6",
+  "recorded_before_execution": true,
+  "latency_driver": "Greedy original forward, fixed N tokens, no EOS; includes concat/argmax; no tokenization/loading."
+}

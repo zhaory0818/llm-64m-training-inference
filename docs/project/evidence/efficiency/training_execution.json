@@ -1,0 +1,17 @@
+{
+  "batch": 4,
+  "alignment": 8,
+  "updates_per_timed_trial": 32,
+  "repeats_per_phase": 3,
+  "phases": [
+    "development",
+    "confirmation"
+  ],
+  "timed_trials": 12,
+  "timed_updates_total": 384,
+  "estimated_timed_seconds": 52.544774398207664,
+  "script_sha256": "514e800ce5db2253ce0814e1a358a74c0ca7414619e23a6c1041fb1271ce8e21",
+  "collator_sha256": "a1711a81fd254a772c91d38d8e74be939572efc23b4c066fbf236bef9a85b749",
+  "frozen_before_formal_timing": true,
+  "scope": "Each repeat uses the same fixed rows within phase, independent fresh initialization, warm-up reset; weights not saved or used as improved models."
+}

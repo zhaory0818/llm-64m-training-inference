@@ -1,0 +1,49 @@
+{
+  "upstream_commit": "f659b55761b754d306bd140573493a6543cafd7f",
+  "files": [
+    {
+      "path": "dataset/lm_dataset.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "eval_llm.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "model/model_lora.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "model/model_minimind.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "scripts/chat_api.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "scripts/convert_model.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "scripts/eval_toolcall.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "scripts/serve_openai_api.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "trainer/train_agent.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "trainer/train_pretrain.py",
+      "python_AST_unchanged": true
+    },
+    {
+      "path": "trainer/trainer_utils.py",
+      "python_AST_unchanged": true
+    }
+  ]
+}

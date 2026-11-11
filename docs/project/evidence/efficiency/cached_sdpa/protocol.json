@@ -1,0 +1,36 @@
+{
+  "hypothesis_origin": "Initial cache-on path was slower than no-cache on this GPU; code inspection found manual single-token attention.",
+  "exploratory_extension": true,
+  "frozen_before_new_timing": true,
+  "main_baseline": "Original cache=True, projection=all; no artificial cache-off baseline",
+  "factors": [
+    "original vs cached single-token SDPA route",
+    "all vs last output projection"
+  ],
+  "prompt_lengths": [
+    32,
+    128,
+    512
+  ],
+  "output_lengths": [
+    32,
+    128
+  ],
+  "repeats": 5,
+  "confirmation": {
+    "length": 256,
+    "output": 64,
+    "repeats": 5,
+    "different_text": true
+  },
+  "numerical_limits": {
+    "fp32_max_abs": 0.001,
+    "fp32_relative": 0.0001,
+    "fp16_max_abs": 0.0625,
+    "fp16_relative": 0.003
+  },
+  "greedy_exact_equality_reported_separately": true,
+  "training_performed": false,
+  "script_sha256": "49ed7f71d33170b0f95ebc6ef7278d62c0fe26b0b9312198f94acd2d63d7c6a5",
+  "optimization_sha256": "14d26453c8442f0b562e93bc37cb56a622ebcd0dde2d96d3f6a3f42e798221b3"
+}

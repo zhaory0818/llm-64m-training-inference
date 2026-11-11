@@ -1,0 +1,6 @@
+{
+  "samples": 1024,
+  "effective_prefixes_preserved": true,
+  "shifted_target_counts_preserved": true,
+  "alignment": 8
+}

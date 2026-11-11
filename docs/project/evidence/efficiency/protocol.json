@@ -1,0 +1,83 @@
+{
+  "frozen_at": "2026-10-31T16:54:19.394432+08:00",
+  "scope": "Bounded local efficiency/correctness experiments; no task-quality improvement claim.",
+  "hypotheses": [
+    "Last-position projection reduces unused prefill projection",
+    "Merged LoRA reduces runtime branch overhead",
+    "Right-padding removal reduces training waste"
+  ],
+  "inference": {
+    "prompt_tokens": [
+      32,
+      128,
+      512
+    ],
+    "new_tokens": [
+      32,
+      128
+    ],
+    "repeats": 5,
+    "warmup_per_condition": 1,
+    "dtype": "float16",
+    "batch": 1,
+    "EOS_disabled_for_equal_work": true,
+    "primary_baseline": "cache=True, logits_to_keep=0",
+    "projection_candidate": "cache=True, logits_to_keep=1",
+    "mechanism_only": "cache=False, logits_to_keep=0",
+    "confirmation": {
+      "prompt_tokens": 256,
+      "new_tokens": 64,
+      "repeats": 5,
+      "different_text": true
+    },
+    "measurement": "Independent greedy driver calls original forward; GPU-event prefill/decode and synchronized wall time; not HTTP TTFT.",
+    "numerical_tolerance": {
+      "projection_fp16_max_abs": 0.0625,
+      "projection_fp16_rel_l2": 0.003,
+      "merge_fp16_mean_abs": 0.01,
+      "merge_fp16_rel_l2": 0.005
+    },
+    "greedy_equality": "Report separately; approximate FP16 logit agreement is not universal exact text equivalence."
+  },
+  "training": {
+    "sample_count": 1024,
+    "split": "512 development + 512 confirmation; performance workloads, not quality validation",
+    "sample_seed": 20261031,
+    "preprocessing_seed": "20261031 + original row",
+    "max_seq_len": 768,
+    "batch_candidates": [
+      4,
+      2,
+      1
+    ],
+    "dtype": "bfloat16 autocast / FP32 parameters",
+    "short_preflight_updates": 3,
+    "formal_updates_per_repeat": 32,
+    "repeats": 3,
+    "confirmation_updates": 32,
+    "confirmation_repeats": 3,
+    "warmup_updates": 3,
+    "optimizer": "AdamW lr=1e-5, default weight_decay=0.01; clip_grad_norm=1; accumulation=1",
+    "comparison": "Same examples, ordering, initial state, supervision and updates; trim only common unused suffix.",
+    "correctness_fp32": {
+      "loss_abs": 2e-05,
+      "logits_mean_abs": 2e-05,
+      "grad_rel_l2": 0.0001
+    },
+    "correctness_bf16": {
+      "loss_abs": 0.03,
+      "grad_rel_l2": 0.08
+    },
+    "no_packing_no_reordering": true,
+    "metrics": [
+      "effective input token/s",
+      "supervised target token/s",
+      "samples/s",
+      "ms/update",
+      "peak allocated/reserved",
+      "padding fraction"
+    ]
+  },
+  "weights_read_only": true,
+  "paid_services": false
+}

@@ -1,0 +1,29 @@
+# Modified from jingyaogong/minimind for the 64M training and inference reproduction project.
+__pycache__/
+*.pyc
+.DS_Store
+out
+website/
+docs-minimind/
+
+# Local learning environment, downloaded data and generated artifacts
+.venv/
+.cache/
+dataset/*.jsonl
+checkpoints/
+logs/
+docs/learning/generated/
+docs/learning/environment_backups/
+
+# Publication boundaries: local credentials and generated binary artifacts
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519
+*.pth
+*.safetensors
+pytorch_model*.bin
+*.tar.gz
+*.zip

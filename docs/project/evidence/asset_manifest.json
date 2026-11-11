@@ -1,0 +1,279 @@
+{
+  "paths_relative_to_workspace": true,
+  "scope": "Retained local model/data assets; source delivery does not include these files.",
+  "assets": [
+    {
+      "path": "checkpoints/dpo_768.pth",
+      "bytes": 137683905,
+      "sha256": "e036c9f5d34d14a003bad0399495390e6f13e8572ab469e4ab3fca771963b65e",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "checkpoints/dpo_768_resume.pth",
+      "bytes": 649062031,
+      "sha256": "d6f8bbfbd8aaad4dad73630c0477b956bc75c90ddee6e9eff80cfc336779cf2f",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "checkpoints/lora_medical_768.pth",
+      "bytes": 138481967,
+      "sha256": "c7f586ee30b3069ab9906951d04d67f7ab08172ad9451a0881a5bf2fe41f4f54",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "checkpoints/lora_medical_768_resume.pth",
+      "bytes": 141658216,
+      "sha256": "32de673c7ac60f7130b958209cbc3b4d3195ac99ea4ebe96fe4eba045e403610",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/agent_rl.jsonl",
+      "bytes": 82036930,
+      "sha256": "cb96bcc8096aecc5eccaab858f75d5ace1dc22da2302c2230457e29744a761ab",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/dpo.jsonl",
+      "bytes": 53653322,
+      "sha256": "ee934a8a455ccc99d1334d63e1254dd1d64f497fd067cfcbb71e3043f5b46768",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/lora_medical.jsonl",
+      "bytes": 34002385,
+      "sha256": "abf66d2bf14bf5704f6c9f1a166061f55d95e4dfd03c29a3c33d085ccaca593f",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/pretrain_t2t_mini.jsonl",
+      "bytes": 1241043656,
+      "sha256": "6dd6716c84ab36897bdbfc7f88e04f4441c48c1ab7ecee88ce0b0e7d4685560c",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/rlaif.jsonl",
+      "bytes": 23754740,
+      "sha256": "8c6634db971fa34b0217f7db4f7c30684f57d20bbb771eb717f1b5aeacb089ba",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "dataset/sft_t2t_mini.jsonl",
+      "bytes": 1739201170,
+      "sha256": "abb1e76b2056e14728beb78db96b7b3c491a0bef1ed3e34a9b381b28f29fa518",
+      "origin": "downloaded_training_data",
+      "bundled_with_source": false
+    },
+    {
+      "path": "docs/learning/generated/basic_diagnosis_20261031/author_reference_edba70ec/weights/full_sft_768.pth",
+      "bytes": 137683346,
+      "sha256": "5b8c49f6c9d965092e651cafeeaeb8705558632b3fd4ac8ab319cbc5a3cbc4a0",
+      "origin": "downloaded_author_model",
+      "bundled_with_source": false
+    },
+    {
+      "path": "docs/learning/generated/serving_20261030/sft_export/pytorch_model.bin",
+      "bytes": 127853500,
+      "sha256": "c83c3b3f464f9affd70481cbc9f0ad800fe53eec5c7fba7098022cda218b462e",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/agent_local/experience_256_20261029_125452/checkpoints/agent_experience_768.pth",
+      "bytes": 137685204,
+      "sha256": "56b3064a9f2d0a90ddc17556bbf0b3e82a748833e57ac007daea1fe95cb2ffc4",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/agent_local/experience_256_20261029_125452/checkpoints/agent_experience_768_resume.pth",
+      "bytes": 649067096,
+      "sha256": "574bb336edf5db8250860c2f034cbd3da21f7382450d91ea3ed523f8a2efd579",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/agent_local/experience_256_20261029_125452/out/agent_experience_768.pth",
+      "bytes": 137684760,
+      "sha256": "2cecedd3760589737a9b75d15021c19974ccb23452639ab49f17b4a5e1e952e6",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261015_bitahub/completed/minimind/checkpoints/pretrain_768.pth",
+      "bytes": 137684380,
+      "sha256": "11edf4d80688c2d16404e9cc600a71ece4d8d0dd1cfbd2ee2f8640667ee98bcf",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261015_bitahub/completed/minimind/checkpoints/pretrain_768_resume.pth",
+      "bytes": 649063920,
+      "sha256": "988f936049422346b30cf8548b460c3ce17d80b8b408a24fef5f4a209465d42e",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261015_bitahub/completed/minimind/out/pretrain_768.pth",
+      "bytes": 137684000,
+      "sha256": "b21e37f639c1c373cce7a0fb6cbd9005dd2891fd1fbd6de44fe61bdc67066e8e",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261016_bitahub_sft/completed/minimind/checkpoints/full_sft_768.pth",
+      "bytes": 137684380,
+      "sha256": "28bf4dff7ef02e20459a909191932023e9eda48601dad796ef2ebbefbed9eac4",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261016_bitahub_sft/completed/minimind/checkpoints/full_sft_768_resume.pth",
+      "bytes": 649063920,
+      "sha256": "02aa737c112ac9fa9e0e165718512b4fdb2320ce508f27e67bef94a4969d66f9",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261016_bitahub_sft/completed/minimind/out/full_sft_768.pth",
+      "bytes": 137684000,
+      "sha256": "2334de2f14733fffc4ef4f71fb1d318d5940a1a295bcdfb0549e49d17538946f",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261019_bitahub_distillation/completed/minimind-distillation/checkpoints/full_dist_768_resume.pth",
+      "bytes": 649064285,
+      "sha256": "af8642b16e248f911c97d76916b2ec819394536c6c0a579e6e35ee684774a4f3",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/20261019_bitahub_distillation/completed/minimind-distillation/out/full_dist_768.pth",
+      "bytes": 137684095,
+      "sha256": "802efb61ffb9310b0d7b93e41623c02cafa8c43cec8412fb4c91d394300cefe4",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/cloud_deploy/upload_probe.bin",
+      "bytes": 16777216,
+      "sha256": "0909d2460ea69fdbac64a6d6eccfad7454a115d2c6ade0de72cf216788de13eb",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/lora_local/preparation_20261018/probe_only_b32.pth",
+      "bytes": 797170,
+      "sha256": "9ac081235f41fc7ae339e4c50b080a269e257cd0a35f45ab8ab5f9850a959721",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/ppo_local/experience_256_20261028_200319/checkpoints/ppo_actor_experience_768.pth",
+      "bytes": 137685584,
+      "sha256": "53b6e7cd3f5986cbd8d46e738a831368fdc7c2d23cb3645c74f154f9a1711e00",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/ppo_local/experience_256_20261028_200319/checkpoints/ppo_actor_experience_768_resume.pth",
+      "bytes": 1416151084,
+      "sha256": "9a141076cde38ed2cbc83a9981184a2d35da02e89bbf6f5ab1edfa6f274c2a16",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/ppo_local/experience_256_20261028_200319/out/ppo_actor_experience_768.pth",
+      "bytes": 137685204,
+      "sha256": "d5efb24b822f8123ca5faa5436e3001c42ae4fbd776ec5b62bd095175c0db8e2",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_cispo_256_20261028_194226/checkpoints/cispo_experience_768.pth",
+      "bytes": 137685204,
+      "sha256": "4ea70fc43853433165de7ab5b003a39bf11ddcb7921964eaa6e2c42f55faf207",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_cispo_256_20261028_194226/checkpoints/cispo_experience_768_resume.pth",
+      "bytes": 649067096,
+      "sha256": "ddf0ab57f257c408250f8f39ad0aa30089ce168ce5bd6ff1681644b50a08db1f",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_cispo_256_20261028_194226/out/cispo_experience_768.pth",
+      "bytes": 137684760,
+      "sha256": "63de17116f49b4f010b9603fc09764676db6726de041a18bbaf0e1cfde2f5b44",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_grpo_256_20261028_192357/checkpoints/grpo_experience_768.pth",
+      "bytes": 137685109,
+      "sha256": "c214ceedb7bee8378e386460f0c85897b048dc324e4c0a20ebceb0e4a159aa02",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_grpo_256_20261028_192357/checkpoints/grpo_experience_768_resume.pth",
+      "bytes": 649066731,
+      "sha256": "4fd65ae33e95ecdc71068c13a9056cbac492245343e30046bac3830a651f8de0",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "logs/rlaif_local/experience_grpo_256_20261028_192357/out/grpo_experience_768.pth",
+      "bytes": 137684665,
+      "sha256": "b0a807daae65660b77b8c5f376f43623b3d822b1aeb731812bbb31c4b9d2ef82",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "out/dpo_768.pth",
+      "bytes": 137682949,
+      "sha256": "6529a059934ff252ec4c1054f110a117375d5e9220495ea560aa0421d05a3938",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "out/full_sft_768.pth",
+      "bytes": 137684000,
+      "sha256": "2334de2f14733fffc4ef4f71fb1d318d5940a1a295bcdfb0549e49d17538946f",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "out/full_sft_768_moe.pth",
+      "bytes": 406719725,
+      "sha256": "a050020ea6d1b9e824693d0db525b1a0a8b40f36a934ea8d89da161368f20cc1",
+      "origin": "downloaded_author_model",
+      "bundled_with_source": false
+    },
+    {
+      "path": "out/lora_medical_768.pth",
+      "bytes": 797242,
+      "sha256": "a81c64d452367746d1d65297d154d5edb66d049bea01e806dd80b0cadb2e00c9",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    },
+    {
+      "path": "out/merge_medical_768.pth",
+      "bytes": 137684475,
+      "sha256": "5423859cd89922f91c12935e1570f5c494e4c0ffb91102b7e94dc2cb2e4bbf65",
+      "origin": "own_training_or_export_artifact",
+      "bundled_with_source": false
+    }
+  ]
+}

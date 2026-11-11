@@ -1,0 +1,91 @@
+{
+  "completed": true,
+  "records": 130,
+  "seconds": 236.44720749999397,
+  "correctness": [
+    {
+      "kind": "projection",
+      "length": 32,
+      "max_abs": 0.0078125,
+      "mean_abs": 5.130171757627977e-06,
+      "relative_l2": 3.643301533884369e-05,
+      "last_argmax_equal": true,
+      "greedy_16_equal": true,
+      "driver_matches_original_generate": true
+    },
+    {
+      "kind": "projection",
+      "length": 128,
+      "max_abs": 0.0078125,
+      "mean_abs": 6.621330612688325e-06,
+      "relative_l2": 4.377531513455324e-05,
+      "last_argmax_equal": true,
+      "greedy_16_equal": true,
+      "driver_matches_original_generate": true
+    },
+    {
+      "kind": "projection",
+      "length": 512,
+      "max_abs": 0.00390625,
+      "mean_abs": 3.246292408221052e-06,
+      "relative_l2": 2.81517695839284e-05,
+      "last_argmax_equal": true,
+      "greedy_16_equal": true,
+      "driver_matches_original_generate": true
+    },
+    {
+      "kind": "merge",
+      "length": 32,
+      "max_abs": 0.009765625,
+      "mean_abs": 0.0020310140680521727,
+      "relative_l2": 0.0007000871119089425,
+      "last_argmax_equal": true,
+      "greedy_32_equal": true
+    },
+    {
+      "kind": "merge",
+      "length": 128,
+      "max_abs": 0.00830078125,
+      "mean_abs": 0.001759792910888791,
+      "relative_l2": 0.0006351378397084773,
+      "last_argmax_equal": true,
+      "greedy_32_equal": true
+    },
+    {
+      "kind": "merge",
+      "length": 512,
+      "max_abs": 0.015625,
+      "mean_abs": 0.0017397180199623108,
+      "relative_l2": 0.0007217735983431339,
+      "last_argmax_equal": true,
+      "greedy_32_equal": true
+    }
+  ],
+  "weights_and_original_sources_unchanged": true,
+  "training_performed": false,
+  "environment_after": {
+    "at": "2026-10-31T17:00:08.480451+08:00",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.6",
+      "datasets": "3.6.0",
+      "numpy": "1.26.4"
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_bytes": 6441926656,
+    "num_threads": 4,
+    "tf32": false,
+    "nvidia_smi": "473 MiB, 0 %, 64, 22.85 W"
+  },
+  "parameter_counts": {
+    "base": 63912192,
+    "lora": 64305408,
+    "merged": 63912192
+  },
+  "file_bytes": {
+    "base": 137684000,
+    "adapter": 797242,
+    "merged": 137684475
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "completed": true,
+  "records": 140,
+  "correctness": [
+    {
+      "dtype": "torch.float32",
+      "length": 32,
+      "teacher_forced_positions": 17,
+      "max_abs": 1.430511474609375e-05,
+      "relative_l2": 4.055218880694156e-07,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 128,
+      "teacher_forced_positions": 17,
+      "max_abs": 7.152557373046875e-06,
+      "relative_l2": 3.7281128584254475e-07,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "length": 512,
+      "teacher_forced_positions": 17,
+      "max_abs": 1.0073184967041016e-05,
+      "relative_l2": 4.739336532111338e-07,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float32",
+      "padded_mask_fallback_exact": true,
+      "state_keys_unchanged": true
+    },
+    {
+      "dtype": "torch.float16",
+      "length": 32,
+      "teacher_forced_positions": 17,
+      "max_abs": 0.015625,
+      "relative_l2": 0.0007189998286776245,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float16",
+      "length": 128,
+      "teacher_forced_positions": 17,
+      "max_abs": 0.015625,
+      "relative_l2": 0.0007639522664248943,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float16",
+      "length": 512,
+      "teacher_forced_positions": 17,
+      "max_abs": 0.02734375,
+      "relative_l2": 0.0009689999860711396,
+      "argmax_equal": true
+    },
+    {
+      "dtype": "torch.float16",
+      "padded_mask_fallback_exact": true,
+      "state_keys_unchanged": true
+    }
+  ],
+  "seconds": 201.372892400017,
+  "training_performed": false,
+  "original_sources_and_weights_unchanged": true,
+  "environment_after": {
+    "at": "2026-10-31T17:09:41.188007+08:00",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "packages": {
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.6",
+      "datasets": "3.6.0",
+      "numpy": "1.26.4"
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_bytes": 6441926656,
+    "num_threads": 4,
+    "tf32": false,
+    "nvidia_smi": "382 MiB, 28 %, 63, 21.03 W"
+  }
+}

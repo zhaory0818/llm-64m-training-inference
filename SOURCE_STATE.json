@@ -1,0 +1,115 @@
+{
+  "upstream": "https://github.com/jingyaogong/minimind",
+  "baseline_commit": "f659b55761b754d306bd140573493a6543cafd7f",
+  "source_ast_all_unchanged": false,
+  "original_sft_train_epoch_AST_unchanged": true,
+  "new_logic": [
+    "dynamic right padding",
+    "guarded cached single-query SDPA",
+    "generation configuration",
+    "correctness/performance/integration harness"
+  ],
+  "protected_before_after": [
+    {
+      "path": "model/model_minimind.py",
+      "before": "7b03f72694dea48eb17dad08a380ee3f881207d3a523ffb9cc418c09c98205e4",
+      "after": "7b03f72694dea48eb17dad08a380ee3f881207d3a523ffb9cc418c09c98205e4",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "model/model_lora.py",
+      "before": "3f61b69e51e39659af5e707d2edf9c285785d2f79c333ae3c653557dd613cdd8",
+      "after": "3f61b69e51e39659af5e707d2edf9c285785d2f79c333ae3c653557dd613cdd8",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "dataset/lm_dataset.py",
+      "before": "feb52486db7d0782e0c5036e1f7290339f00b8b9457316eda225152f67d564d3",
+      "after": "feb52486db7d0782e0c5036e1f7290339f00b8b9457316eda225152f67d564d3",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "trainer/train_full_sft.py",
+      "before": "f367bf75208316f3ef54a5597127846210d112b9f9a984040ea2600a30faba26",
+      "after": "bd643fb614dbae060040f11863e8f18513660acdbcdc5110dc5355679ce54915",
+      "changed": true,
+      "intentional_optional_entry_integration": true
+    },
+    {
+      "path": "trainer/trainer_utils.py",
+      "before": "a3160371eef296ca6a7cc9e49f70e4f9bf940b4e4e6eaab62a8f49076bda82f6",
+      "after": "a3160371eef296ca6a7cc9e49f70e4f9bf940b4e4e6eaab62a8f49076bda82f6",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "model/tokenizer.json",
+      "before": "8bf5868abfc7ea919186b57e2b411adefe3b0922b53052c5839937e166b9d395",
+      "after": "8bf5868abfc7ea919186b57e2b411adefe3b0922b53052c5839937e166b9d395",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "model/tokenizer_config.json",
+      "before": "e42b762555734279158ca292431c831fa387c48c35d9b1b205f4fc6c83b79d34",
+      "after": "e42b762555734279158ca292431c831fa387c48c35d9b1b205f4fc6c83b79d34",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "tools/project_demo.py",
+      "before": "37615443b68d70e7f17b7e4eb500ac298ae92a7fbe678353c2e676d602b4bc51",
+      "after": "c940d423e1c5a06f86eb2960a05e08f52e5c8b3c3ef591c8bee99380eda9d9ac",
+      "changed": true,
+      "intentional_optional_entry_integration": true
+    },
+    {
+      "path": "out/full_sft_768.pth",
+      "before": "2334de2f14733fffc4ef4f71fb1d318d5940a1a295bcdfb0549e49d17538946f",
+      "after": "2334de2f14733fffc4ef4f71fb1d318d5940a1a295bcdfb0549e49d17538946f",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "out/lora_medical_768.pth",
+      "before": "a81c64d452367746d1d65297d154d5edb66d049bea01e806dd80b0cadb2e00c9",
+      "after": "a81c64d452367746d1d65297d154d5edb66d049bea01e806dd80b0cadb2e00c9",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    },
+    {
+      "path": "out/merge_medical_768.pth",
+      "before": "5423859cd89922f91c12935e1570f5c494e4c0ffb91102b7e94dc2cb2e4bbf65",
+      "after": "5423859cd89922f91c12935e1570f5c494e4c0ffb91102b7e94dc2cb2e4bbf65",
+      "changed": false,
+      "intentional_optional_entry_integration": false
+    }
+  ],
+  "evidence": "docs/project/evidence/efficiency/summary.json",
+  "previous_83_file_snapshot_preserved": true,
+  "weights_data_credentials_and_environments_bundled": false,
+  "publication": {
+    "target_repository": "https://github.com/zhaory0818/llm-64m-training-inference.git",
+    "modified_upstream_files_marked": [
+      ".gitignore",
+      "README.md",
+      "dataset/lm_dataset.py",
+      "eval_llm.py",
+      "model/model_lora.py",
+      "model/model_minimind.py",
+      "scripts/chat_api.py",
+      "scripts/convert_model.py",
+      "scripts/eval_toolcall.py",
+      "scripts/serve_openai_api.py",
+      "trainer/train_agent.py",
+      "trainer/train_full_sft.py",
+      "trainer/train_pretrain.py",
+      "trainer/trainer_utils.py"
+    ],
+    "historical_benchmark_hashes_refer_to_measured_source": true,
+    "upstream_documentation": "https://github.com/jingyaogong/minimind/blob/f659b55761b754d306bd140573493a6543cafd7f/README.md"
+  }
+}

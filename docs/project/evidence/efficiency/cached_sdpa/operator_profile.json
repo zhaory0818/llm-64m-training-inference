@@ -1,0 +1,17 @@
+[
+  {
+    "enabled": false,
+    "operators": {
+      "aten::bmm": 16,
+      "aten::softmax": 8,
+      "aten::_softmax": 8
+    }
+  },
+  {
+    "enabled": true,
+    "operators": {
+      "aten::scaled_dot_product_attention": 8,
+      "aten::_scaled_dot_product_efficient_attention": 8
+    }
+  }
+]

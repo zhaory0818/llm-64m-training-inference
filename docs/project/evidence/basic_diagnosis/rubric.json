@@ -1,0 +1,38 @@
+{
+  "scope": "36 assistant-authored diagnostic items, six groups, not a standardized benchmark or sealed final test",
+  "freeze": "Cases, answers, rubric and scorer are hashed before any model generation.",
+  "strict": "Trim outer whitespace only. No extraction, removal of reasoning, punctuation repair or best-of sampling.",
+  "review": {
+    "reviewer": "assistant qualitative review, not independent human or paid judge API",
+    "score_2": "Task substantially completed, relevant and correct within the given criterion; no material contradiction.",
+    "score_1": "Relevant but incomplete, unclear or degraded by repetition/truncation; partial useful content.",
+    "score_0": "Wrong core fact/reasoning, irrelevant, invented inaccessible information, or no useful task completion.",
+    "auxiliary": "Review all answers; instruction/reasoning/context retain strict automatic primary scores. Do not combine subjective scores into total accuracy."
+  },
+  "profiles": {
+    "greedy": {
+      "do_sample": false,
+      "temperature": 1.0,
+      "top_p": 1.0,
+      "top_k": 0
+    },
+    "sample42": {
+      "do_sample": true,
+      "temperature": 0.85,
+      "top_p": 0.95,
+      "top_k": 50
+    }
+  },
+  "common": {
+    "seed": 42,
+    "max_new_tokens": 128,
+    "max_input_tokens": 640,
+    "open_thinking": false,
+    "system_prompt": null,
+    "tools": null,
+    "repetition_penalty": 1.0
+  },
+  "review_scope": "Context X02 uses a fixed assistant history, not free-running multi-turn dialogue.",
+  "lm_scope": "12 new assistant-authored short paragraphs; same tokens for pretrain/SFT, include EOS, exclude BOS as prediction target; not public-benchmark perplexity.",
+  "repetition_flag": "Heuristic only: normalized text >=40 chars and duplicate character 4-gram fraction >0.35."
+}

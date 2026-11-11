@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-31T16:54:27.684407+08:00",
+  "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6",
+    "datasets": "3.6.0",
+    "numpy": "1.26.4"
+  },
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "gpu_bytes": 6441926656,
+  "num_threads": 4,
+  "tf32": false,
+  "nvidia_smi": "221 MiB, 0 %, 54, 7.94 W"
+}

@@ -1,0 +1,518 @@
+{
+  "scope": "36 developmental cases, paired weights comparison; not sealed test or standardized benchmark",
+  "review_limitations": "Same predeclared 0/1/2 rubric as own baseline. Assistant read every output and knows model origin; neither independent nor blinded comparison. Own reviews are reused from the earlier session. Subjective scores are exploratory, not a combined accuracy or standardized benchmark. Strict automatic grades remain primary for instruction, reasoning and context; no output repair or best-of selection.",
+  "profiles": {
+    "greedy": {
+      "groups": {
+        "communication": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "1": 2,
+              "0": 4
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "0": 3,
+              "1": 3
+            },
+            "length_limited": 6
+          }
+        },
+        "context": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 5
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 5
+          }
+        },
+        "instruction": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 6
+          }
+        },
+        "knowledge": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 1.0,
+            "review_distribution": {
+              "0": 1,
+              "1": 4,
+              "2": 1
+            },
+            "length_limited": 5
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 4
+          }
+        },
+        "reasoning": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.0,
+            "review_distribution": {
+              "0": 6
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.0,
+            "review_distribution": {
+              "0": 6
+            },
+            "length_limited": 6
+          }
+        },
+        "uncertainty": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 1.0,
+            "review_distribution": {
+              "1": 6
+            },
+            "length_limited": 6
+          }
+        }
+      },
+      "own": {
+        "strict_correct": 0,
+        "strict_denominator": 18,
+        "eos": 2,
+        "length_limited": 34,
+        "repetition_flags": 17,
+        "unmatched_think_close": 0,
+        "generation_seconds": 78.32475719996728,
+        "new_tokens": 4439
+      },
+      "author": {
+        "strict_correct": 0,
+        "strict_denominator": 18,
+        "eos": 3,
+        "length_limited": 33,
+        "repetition_flags": 10,
+        "unmatched_think_close": 0,
+        "generation_seconds": 78.75757759984117,
+        "new_tokens": 4347
+      },
+      "strict_transitions_own_to_author": {
+        "0->0": 18
+      }
+    },
+    "sample42": {
+      "groups": {
+        "communication": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "1": 3,
+              "0": 3
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 6
+          }
+        },
+        "context": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.16666666666666666,
+            "review_distribution": {
+              "0": 5,
+              "1": 1
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "1": 3,
+              "0": 3
+            },
+            "length_limited": 5
+          }
+        },
+        "instruction": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.0,
+            "review_distribution": {
+              "0": 6
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.16666666666666666,
+            "review_distribution": {
+              "0": 5,
+              "1": 1
+            },
+            "length_limited": 6
+          }
+        },
+        "knowledge": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "0": 4,
+              "2": 1,
+              "1": 1
+            },
+            "length_limited": 5
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "0": 3,
+              "1": 3
+            },
+            "length_limited": 5
+          }
+        },
+        "reasoning": {
+          "own": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.16666666666666666,
+            "review_distribution": {
+              "0": 5,
+              "1": 1
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": 0,
+            "strict_denominator": 6,
+            "review_mean": 0.5,
+            "review_distribution": {
+              "0": 4,
+              "1": 1,
+              "2": 1
+            },
+            "length_limited": 4
+          }
+        },
+        "uncertainty": {
+          "own": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.3333333333333333,
+            "review_distribution": {
+              "0": 4,
+              "1": 2
+            },
+            "length_limited": 6
+          },
+          "author": {
+            "n": 6,
+            "strict_correct": null,
+            "strict_denominator": 0,
+            "review_mean": 0.6666666666666666,
+            "review_distribution": {
+              "0": 3,
+              "1": 2,
+              "2": 1
+            },
+            "length_limited": 5
+          }
+        }
+      },
+      "own": {
+        "strict_correct": 0,
+        "strict_denominator": 18,
+        "eos": 1,
+        "length_limited": 35,
+        "repetition_flags": 0,
+        "unmatched_think_close": 0,
+        "generation_seconds": 82.1231111001398,
+        "new_tokens": 4487
+      },
+      "author": {
+        "strict_correct": 0,
+        "strict_denominator": 18,
+        "eos": 5,
+        "length_limited": 31,
+        "repetition_flags": 2,
+        "unmatched_think_close": 0,
+        "generation_seconds": 83.96184540001559,
+        "new_tokens": 4323
+      },
+      "strict_transitions_own_to_author": {
+        "0->0": 18
+      }
+    }
+  },
+  "model_sources": {
+    "own_sft": "Own mini-route SFT",
+    "author_sft": "jingyaogong/minimind-3-pytorch@edba70ec15e06bc4280fbb96ac3383d73a7eab91/full_sft_768.pth"
+  },
+  "language_modeling": {
+    "author": {
+      "model": "author_main_sft",
+      "paragraphs": [
+        {
+          "id": "LM01",
+          "target_tokens": 69,
+          "nll_sum": 265.8042907714844,
+          "mean_nll": 3.8522360981374546
+        },
+        {
+          "id": "LM02",
+          "target_tokens": 52,
+          "nll_sum": 226.57522583007812,
+          "mean_nll": 4.357215881347656
+        },
+        {
+          "id": "LM03",
+          "target_tokens": 52,
+          "nll_sum": 203.2439422607422,
+          "mean_nll": 3.908537351168119
+        },
+        {
+          "id": "LM04",
+          "target_tokens": 65,
+          "nll_sum": 253.1056365966797,
+          "mean_nll": 3.893932870718149
+        },
+        {
+          "id": "LM05",
+          "target_tokens": 66,
+          "nll_sum": 258.7275085449219,
+          "mean_nll": 3.9201137658321494
+        },
+        {
+          "id": "LM06",
+          "target_tokens": 62,
+          "nll_sum": 234.3007049560547,
+          "mean_nll": 3.7790436283234627
+        },
+        {
+          "id": "LM07",
+          "target_tokens": 54,
+          "nll_sum": 221.43336486816406,
+          "mean_nll": 4.100617867928964
+        },
+        {
+          "id": "LM08",
+          "target_tokens": 61,
+          "nll_sum": 276.319091796875,
+          "mean_nll": 4.529821176997951
+        },
+        {
+          "id": "LM09",
+          "target_tokens": 46,
+          "nll_sum": 171.645751953125,
+          "mean_nll": 3.731429390285326
+        },
+        {
+          "id": "LM10",
+          "target_tokens": 54,
+          "nll_sum": 221.7887725830078,
+          "mean_nll": 4.107199492277922
+        },
+        {
+          "id": "LM11",
+          "target_tokens": 55,
+          "nll_sum": 192.15945434570312,
+          "mean_nll": 3.4938082608309657
+        },
+        {
+          "id": "LM12",
+          "target_tokens": 50,
+          "nll_sum": 259.9231872558594,
+          "mean_nll": 5.198463745117188
+        }
+      ],
+      "total_target_tokens": 686,
+      "total_nll": 2785.0269317626953,
+      "token_weighted_cross_entropy": 4.05980602297769,
+      "perplexity": 57.96306648535737,
+      "scope": "12 new assistant-authored short paragraphs; same tokens for pretrain/SFT, include EOS, exclude BOS as prediction target; not public-benchmark perplexity."
+    },
+    "own": {
+      "model": "own_sft",
+      "paragraphs": [
+        {
+          "id": "LM01",
+          "target_tokens": 69,
+          "nll_sum": 242.92506408691406,
+          "mean_nll": 3.5206531027088994
+        },
+        {
+          "id": "LM02",
+          "target_tokens": 52,
+          "nll_sum": 208.41720581054688,
+          "mean_nll": 4.008023188664363
+        },
+        {
+          "id": "LM03",
+          "target_tokens": 52,
+          "nll_sum": 180.70559692382812,
+          "mean_nll": 3.475107633150541
+        },
+        {
+          "id": "LM04",
+          "target_tokens": 65,
+          "nll_sum": 231.1929473876953,
+          "mean_nll": 3.5568145751953124
+        },
+        {
+          "id": "LM05",
+          "target_tokens": 66,
+          "nll_sum": 201.30807495117188,
+          "mean_nll": 3.0501223477450283
+        },
+        {
+          "id": "LM06",
+          "target_tokens": 62,
+          "nll_sum": 224.9599609375,
+          "mean_nll": 3.628386466733871
+        },
+        {
+          "id": "LM07",
+          "target_tokens": 54,
+          "nll_sum": 211.05039978027344,
+          "mean_nll": 3.90834073667173
+        },
+        {
+          "id": "LM08",
+          "target_tokens": 61,
+          "nll_sum": 248.25485229492188,
+          "mean_nll": 4.069751676965932
+        },
+        {
+          "id": "LM09",
+          "target_tokens": 46,
+          "nll_sum": 179.63751220703125,
+          "mean_nll": 3.9051633088485054
+        },
+        {
+          "id": "LM10",
+          "target_tokens": 54,
+          "nll_sum": 224.2397918701172,
+          "mean_nll": 4.152588738335504
+        },
+        {
+          "id": "LM11",
+          "target_tokens": 55,
+          "nll_sum": 185.89486694335938,
+          "mean_nll": 3.379906671697443
+        },
+        {
+          "id": "LM12",
+          "target_tokens": 50,
+          "nll_sum": 236.83868408203125,
+          "mean_nll": 4.736773681640625
+        }
+      ],
+      "total_target_tokens": 686,
+      "total_nll": 2575.4249572753906,
+      "token_weighted_cross_entropy": 3.7542637861157298,
+      "perplexity": 42.702769862958974,
+      "scope": "12 short assistant-authored diagnostic paragraphs; not standard benchmark or general ability threshold"
+    }
+  }
+}

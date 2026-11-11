@@ -1,0 +1,92 @@
+[
+  {
+    "phase": "development",
+    "repeat": -1,
+    "variant": "fixed768",
+    "batch": 4,
+    "updates": 3,
+    "warmup_updates_discarded": 1,
+    "adam_steps": [
+      3
+    ],
+    "samples": 12,
+    "input_tokens": 5982,
+    "target_tokens": 4476,
+    "processed_tokens": 9216,
+    "padding_fraction": 0.35091145833333337,
+    "width_mean": 768,
+    "wall_seconds": 0.46836899998015724,
+    "compute_gpu_seconds": 0.46615072631835935,
+    "ms_per_update": 156.12299999338575,
+    "samples_per_second": 25.620824607325396,
+    "effective_input_tokens_per_second": 12771.981066751709,
+    "supervised_tokens_per_second": 9556.567578532373,
+    "peak_allocated_bytes": 2518679040,
+    "peak_reserved_bytes": 2751463424,
+    "loss_first": 1.2857306003570557,
+    "loss_last": 1.4759730100631714,
+    "loss_mean": 1.2488145232200623,
+    "losses": [
+      1.2857306003570557,
+      0.9847399592399597,
+      1.4759730100631714
+    ],
+    "gradient_norms": [
+      2.351792335510254,
+      2.0097320079803467,
+      2.198524236679077
+    ],
+    "widths": [
+      768,
+      768,
+      768
+    ],
+    "parameter_max_abs_delta": 3.075599670410156e-05,
+    "finite_state": true
+  },
+  {
+    "phase": "development",
+    "repeat": -1,
+    "variant": "dynamic8",
+    "batch": 4,
+    "updates": 3,
+    "warmup_updates_discarded": 1,
+    "adam_steps": [
+      3
+    ],
+    "samples": 12,
+    "input_tokens": 5982,
+    "target_tokens": 4476,
+    "processed_tokens": 7040,
+    "padding_fraction": 0.1502840909090909,
+    "width_mean": 586.6666666666666,
+    "wall_seconds": 0.3526430999918375,
+    "compute_gpu_seconds": 0.3514521560668945,
+    "ms_per_update": 117.54769999727917,
+    "samples_per_second": 34.02873897228603,
+    "effective_input_tokens_per_second": 16963.326377684585,
+    "supervised_tokens_per_second": 12692.719636662689,
+    "peak_allocated_bytes": 2515468800,
+    "peak_reserved_bytes": 2759852032,
+    "loss_first": 1.2855896949768066,
+    "loss_last": 1.4759353399276733,
+    "loss_mean": 1.2491228183110554,
+    "losses": [
+      1.2855896949768066,
+      0.9858434200286865,
+      1.4759353399276733
+    ],
+    "gradient_norms": [
+      2.349738121032715,
+      2.0101795196533203,
+      2.2006876468658447
+    ],
+    "widths": [
+      464,
+      768,
+      528
+    ],
+    "parameter_max_abs_delta": 3.075599670410156e-05,
+    "finite_state": true
+  }
+]
